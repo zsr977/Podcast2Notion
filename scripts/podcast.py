@@ -66,6 +66,7 @@ def get_mileage():
     url = "https://api.xiaoyuzhoufm.com/v1/mileage/list"
     data = {"rank": "TOTAL"}
     loadMoreKey = ""
+    print("headers==>",headers)
     while loadMoreKey is not None:
         if loadMoreKey:
             data["loadMoreKey"] = loadMoreKey
